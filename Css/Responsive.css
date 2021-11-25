@@ -1,0 +1,131 @@
+@media only screen and (max-width: 1080px) {
+    html {
+        font-size: 60%;
+    }
+
+    Header nav.Cols ul.Col li a {
+        margin-left: 6rem;
+    }
+
+    Section.Work .Container .Cols {
+        width: 100%;
+        justify-content: center;
+    }
+
+    Section.Work .Container .Cols .Col {
+        margin: 2rem 1rem;
+    }
+
+    Section.Team .Container .Cols .Col.Card {
+        width: calc(100%/2 - 6rem);
+        margin: 3rem;
+    }
+
+    section.Contact .Container .Cols .Col {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.Contact .Container .Cols .Col.Form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 55%;
+    }
+
+    /* ========================================================= */
+    /* ------------------START MAKE HAMBARGAR------------------ */
+    Header nav.Cols .Col.Hambargar {
+        margin-left: auto;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    Header nav.Cols .Col.Hambargar span {
+        height: 3.5rem;
+        width: .4rem;
+        background-color: #000;
+        margin-left: .8rem;
+        transform-origin: top;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+
+    Header nav.Cols ul.Col {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5vh;
+        position: fixed;
+        top: 17.4%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.89);
+        z-index: 2;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    Header nav.Cols ul.Col.Active_mobile_nave {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    Header nav.Cols ul.Col.Scrolled {
+        top: 8.4%;
+    }
+
+    Header nav.Cols ul.Col li a {
+        margin-left: 0rem;
+    }
+
+    Header nav.Cols ul.Col li a {
+        font-size: 1.8rem;
+    }
+
+    Header nav.Cols ul.Col li a:hover,
+    ul li a.Active {
+        color: #ffffff !important;
+        letter-spacing: .5rem;
+    }
+
+
+    /* END MAKE HAMBARGAR */
+    /* ========================================================= */
+
+    Section.Work .Container .Cols {
+        width: 100%;
+        justify-content: center;
+    }
+
+    Section.Team .Container .Cols .Col.Card {
+        width: calc(100%/1 - 6rem);
+        margin: 3rem;
+    }
+
+    section.Contact .Container .Cols .Col {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.Contact .Container .Cols .Col.Form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
